@@ -1,0 +1,47 @@
+<!DOCTYPE html><!-- <!DOCTYPE talar om att det är en HTML5-dokument. Det ska alltid vara först i HTML-dokumentet. -->
+<html lang="sv"><!--Språk inställd på svenska.--> 
+  <!--??? Enligt https://www.youtube.com/watch?v=MK8MmMYsfZM (webbskolan) ska jag också ha dir="ltf"> efter <html lang="sv", alltså att texten ska läsas från vänster till höger som man gör i svenska språket, men vidon är 6 år gammal och har inte sett att man behöver det på andra ställen. HTML verkar ju redan ha vänster till höger som standard-riktning?-->
+<head> <!-- Innehåller information om hemsidan. Men det visas inte visuellt på själva hemsidan. -->
+  <title>Unga.Universum</title>  <!-- Sätter titeln, alltså texten som visas i webbläsarens flik-->
+  <meta charset="utf-8"> <!-- För att säkerställa att svenska tecken fungerar på hemsidan som å,ä och ö. Meta har ingen sluttag.) -->
+    <link rel="shortcut icon" href="./BILDER/favicon.ico" type="image/x-icon"> <!-- Anger min hemsidas ikon. (som jag skapat och gjort till en faviicon) https://www.w3schools.com/html/html_favicon.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Metatagen använder jag för att anpassa visningsyta till olika skärmstorlekar. För att få en websida rätt på mobila enheter använder man oftast <meta name="viewport" och enligt w3schools, ska jag inkludera  <meta> elementet in  <head> https://www.w3schools.com/css/css_rwd_viewport.asp --> <!--content="width=device-width, initial-scale=1"  ställer in sidans bredd så att den följer enhetens skärmbredd (vilken varierar beroende på vilken enhet som används). Delen initial-scale=1.0 anger den ursprungliga zoomnivån när sidan först laddas i webbläsaren.>-->
+    <link rel="stylesheet" href="/Style.css">    <!-- Här har jag länkat till min css-kod, där jag bestämmer utseende. -->
+</head> <!-- Sluttag för head -->
+ <body class="home-page"> <!-- Här har jag lagt in body,  allt innehåll som ska synas på min hemsida ska vara inom <body och </body> Det är det besökaren ser på själva hemsidan, och alltså sidans synliga innehåll, jag har också gett body ett klassnamn för att kunna styla vidare i CSS-->
+  <div class="decorative-background" aria-hidden="true"> <!-- <div> står för division och används för att gruppera flera HTML-element i en gemensam behållare, det jag har grupperar är dekorativa element som jag själv har gjort i Adobe Illustator och sparat som SVG, för att placera ut som hemsidan. Jag vill åt en ungdomlig känsla, lite som "klotter", men inte lika mycket som i min TV-vinjett som man kan se under kategorien web-TV, då det enligt mig skulle störa för mycket.-->
+    <img class="star" src="/SVG/SVG/stjarna.svg" alt="" width="100" height="87">
+    <img class="klotter" src="/SVG/SVG/Resurs 3.svg" alt="" width="100" height="87">
+    <img class="planet" src="/SVG/SVG/Resurs 2.svg" alt="" width="100" height="87"> <!-- width och height är storlek -->
+    <img class="ungdomar" src="/SVG/SVG/UNGDOMAR.svg" alt="" width="100" height="87"> <!-- jag låter alt stå tomt då det bara är dekorationer och inga bilder som behöver någon bildtext -->
+    <img class="lungblomma" src="/SVG/SVG/lungblomma.svg" alt="" width="100" height="87"> <!-- imgtag och src för att lägga in bilderna jag skapat och sparat till min -->
+  </div>  <!-- Sluttag för divison -->
+   <nav class="category-nav"> <!-- <nav> öppnar navigeringsmenyn. </nav> stänger den, <ul> och <li> (list item) skapar listan med menyval, <a>, betyder anchor eller ankare och gör rubriken klickbar och href visar var länken ska leda (till vilken html-sidaI och <img> visar bilderna!-->
+  <ul> <!-- <ul> startar en punktlista, med fem listelement <li>. Jag har länkat mina kategorier, som jag gjort symboler till i Adobe illustrator, så att man kan klicka på både rubrik och ikon/symbol och ta sig till nya html-sidor, så att man kan klicka sig vidare eller fram och tillbaka på både rubrik och ikon. -->
+    <li><a href="artiklar.html">Artiklar<br><img class="articles-icon" src="/BILDER/artiklar.png" alt=""></a></li>
+    <li><a href="Podcast.html">Podcast<br><img class="podcast-icon" src="/BILDER/PODD.png" alt=""></a></li>
+    <li><a href="WEBB-TV.html">WEBB-TV<br><img class="webtv-icon" src="/BILDER/Webbtv.ben.png" alt=""></a></li>
+    <li><a href="Spel och Quiz.html">Spel och Quiz<br><img class="games-icon" src="/BILDER/SPEL.png" alt=""></a></lhttp://127.0.0.1:5500/korsord.htmli>
+   <li><a href="OM UNGA.UNIVERSUM.html">Om U.U<br><img class="about-icon" src="/BILDER/Om oss.png" alt=""></a></li> <!-- Jag väljer att inte fylla i alternativtext då jag redan har rubriker under mina illusterade ikoner-->
+  </ul> <!--Jag har skapat symboler för dekoration i adobe illustrator, sparat som SVG och lagt in dem i min html fil för att sedan ändra position i css-->
+<button class="back-button" type="button" onclick="history.back()" aria-label="Go back">
+  <img src="Symboler/pil%201.png" alt="">
+</button>
+</nav> 
+ <div class="welcome-block">  <!-- division för att gruppera innehåll, sen class för välkomsttext-->
+   <h1 class="welcome-title">Hej! Välkommen till</h1>  <!-- Välkommsttext, Hej, välkommen till (innan jag lägger in ritad logga)-->
+   <img id="logonamn" src="/SVG/NAMNLOGO.svg" alt="Unga.Universum"> <!-- textlogga jag ritar med utgångspunkt från barriottypsnitt i illustrator och lagt in, denna har en idtag också, till style.css-->
+   <button class="home-logo" type="button" aria-label="Snurra logotypen">
+     <img class="site-logo" src="logo-unga-universum.png" alt="Logotyp för Unga.Universum">
+   </button>
+ </div>
+ <!--<hr> seperarar innehållet, genom att skapa en horisentell linje över sidan, det är precis som br en tomt element som inte behöver ha en sluttag.  -->
+<footer class="footer">
+<p><a href="mailto:kontakt@ungauniversum.se"><img class="footer-mail-icon" src="/SVG/POSTBREV.png" alt="">Mejla oss på Unga.Universum.se</a></p> <!-- så man kan mejla till U.U, länkat så mejlruta kommer upp för besökaren som klickar-->
+  <p>Ansvarig utgivare: Saga Lindholm © 2026.</p> <a class="instagram-link" href="https://www.instagram.com/ungauniversum?utm_source=qr" aria-label="Besök vår Instagram">
+    <img src="/SVG/insta.svg" alt=""> <!-- min instalink och symbol jag ritat--> <div id="insta"></div> <!-- Skapade en instagram för U.U, så att det faktiskt går att länka-->
+  </a> 
+</footer> <!-- Sluttag för footer -->
+<script src="./Script.js" defer></script>
+</body><!-- Slut på innehåll--> <!-- -->
+</html> <!--sluttag på htmldokument -->
